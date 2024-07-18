@@ -1,6 +1,136 @@
+
+#site-name a {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* Adjust hero section styles */
+#hero {
+  background-image: url('assets/img/hero-background.jpg'); /* Add an attractive background image */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 150px 0; /* Adjust padding as needed */
+}
+
+#hero h1 {
+  font-size: 48px; /* Hero section heading size */
+  font-weight: 700; /* Hero section heading weight */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+#hero h2 {
+  font-size: 24px; /* Subheading size */
+  font-weight: 400; /* Subheading weight */
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #ffcc00; /* Button background color */
+  color: #004080; /* Button text color */
+  font-weight: 600; /* Button text weight */
+  font-size: 18px; /* Button text size */
+  padding: 12px 24px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #004080; /* Button background color on hover */
+  color: #ffffff; /* Button text color on hover */
+}
+
+/* Adjust features section styles */
+.features {
+  background-color: #ffffff; /* White background */
+  padding: 80px 0; /* Adjust padding as needed */
+}
+
+.section-title h2 {
+  font-size: 36px; /* Section title size */
+  font-weight: 700; /* Section title weight */
+  margin-bottom: 30px; /* Adjust margin as needed */
+  text-align: center;
+}
+
+.section-title p {
+  font-size: 18px; /* Section subtitle size */
+  font-weight: 400; /* Section subtitle weight */
+  text-align: center;
+}
+
+.icon-box {
+  background-color: #f0f0f0; /* Light grey box background */
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px; /* Add rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.icon-box i {
+  font-size: 48px; /* Icon size */
+  margin-bottom: 15px; /* Adjust margin as needed */
+  display: block;
+  text-align: center;
+}
+
+.icon-box h4 {
+  font-size: 24px; /* Box title size */
+  font-weight: 700; /* Box title weight */
+  margin-bottom: 15px; /* Adjust margin as needed */
+  text-align: center;
+}
+
+.icon-box p {
+  font-size: 16px; /* Box text size */
+  font-weight: 400; /* Box text weight */
+  text-align: center;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px); /* Add hover animation */
+}
+
+/* Adjust footer styles */
+footer {
+  background-color: #004080; /* Dark blue footer background */
+  color: #ffffff; /* White text color */
+  padding: 60px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0; /* Remove bottom margin for paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 36px; /* Adjust hero heading size for smaller screens */
+  }
+  #hero h2 {
+    font-size: 18px; /* Adjust hero subheading size for smaller screens */
+  }
+  .download-btn {
+    font-size: 16px; /* Adjust button text size for smaller screens */
+  }
+  .icon-box {
+    padding: 20px; /* Adjust icon box padding for smaller screens */
+  }
+}
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #585a61;
+  background-color: #f8f9fa;
 }
 
 a {
@@ -86,7 +216,8 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 15px 0;
-  /* background: rgba(255, 255, 255, 0.95); */
+  background-color: #004080;
+  color: #ffffff;
   background: linear-gradient(90deg, #511359, #691156, #000000, #000000) !important;
 }
 
@@ -155,7 +286,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
-  color: #47536e;
+  color: #f1f1f1;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -165,6 +296,19 @@ h6 {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+}
+
+#navbar ul li a {
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  background-color: #ffcc00;
+  border-radius: 5px;
 }
 
 .navbar a:hover,
@@ -308,8 +452,9 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 6px;
+  border-radius: 20px;
   background: linear-gradient(90deg, #2e0d32, #691156) !important;
+  height: 30vh;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -399,7 +544,7 @@ h6 {
 }
 
 #hero h2 {
-  color: #515f7d;
+  color: #f1f1f1;
   margin-bottom: 50px;
   font-size: 20px;
 }
@@ -822,6 +967,62 @@ section {
 }
 
 /* Contact */
+.swiper-slide{
+  width: 300px !important;
+}
+.custom-quote {
+border-left: 5px solid #4CAF50;
+padding-left: 5px;
+margin: 20px 0;
+font-style: italic;
+background-color: #f9f9f9;
+border-radius: 5px;
+position: relative;
+width: 100%;
+}
+
+.custom-quote::before {
+/* content: open-quote; */
+font-size: 4em;
+color: #4CAF50;
+position: absolute;
+left: 10px;
+top: -10px;
+}
+
+.custom-quote .quote-text {
+font-size: 1.2em;
+color: #333;
+font-weight: bold;
+}
+
+.custom-quote footer {
+text-align: right;
+font-size: .5em;
+color: #666;
+}
+
+.cite-footer{
+  background: rgb(224, 223, 223) !important;
+  padding: 10px;
+  
+}
+
+.custom-quote footer cite {
+font-style: normal;
+font-size: 15px;
+}
+
+.gallery {
+margin: 0
+}
+
+.swiper-slide {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .contact .container {
   background: linear-gradient(90deg, #2e0d32, #691156) !important;
   padding: 2rem;
@@ -834,15 +1035,17 @@ section {
 }
 .contact .info {
   padding: 20px 40px;
-  background: transparent;
-  box-shadow: 4px 4px 8px #2e0d32;
-  color: #f1f1f1;
+  margin-bottom: 10px;
+  background: rgb(238, 236, 236);
+  box-shadow: 4px 4px 8px #000;
+  color: #000;
   text-align: center;
+  border-radius: 15px;
 }
 
 .contact .info i {
-  font-size: 48px;
-  color: #f1f1f1;
+  font-size: 32px;
+  color: rgb(5, 177, 5);
   margin-bottom: 15px;
 }
 

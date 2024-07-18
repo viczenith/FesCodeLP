@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empower your tech skills with FesCode Academy. Join us to learn programming, data science, and software development.">
+  <meta name="keywords" content="FesCode Academy, tech skills, programming, data science, software development, education">
+
+  <title>FesCode Academy</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/FesCodeLogoColor1.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Poppins:300,400,500,600" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Additional CSS -->
+  <style>
+    /* Customize additional styles as needed */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa; /* Light grey background */
+    }
+
+    /* Adjust header styles */
+    #header {
+      background-color: #004080; /* Dark blue background */
+      color: #ffffff; /* White text color */
+    }
+
+    /* Adjust site name styles */
+    #site-name a {
+      color: #ffffff; /* White text color */
+      font-size: 24px; /* Adjust font size as needed */
+      font-weight: 600; /* Adjust font weight as needed */
+      text-decoration: none;
+    }
+
+    /* Adjust main navigation link styles */
+    #navbar ul li a {
+      color: #ffffff; /* White text color */
+      padding: 10px 15px; /* Adjust padding as needed */
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    #navbar ul li a:hover,
+    #navbar ul li a.active {
+      background-color: #ffcc00; /* Yellow background on hover */
+      border-radius: 5px; /* Add rounded corners */
+    }
+
+    /* Adjust hero section styles */
+    #hero {
+      background-image: url('assets/img/hero-background.jpg'); /* Add an attractive background image */
+      background-size: cover;
+      background-position: center;
+      color: #ffffff; /* White text color */
+      text-align: center;
+      padding: 150px 0; /* Adjust padding as needed */
+    }
+
+    #hero h1 {
+      font-size: 48px; /* Hero section heading size */
+      font-weight: 700; /* Hero section heading weight */
+      margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    #hero h2 {
+      font-size: 24px; /* Subheading size */
+      font-weight: 400; /* Subheading weight */
+      margin-bottom: 30px; /* Adjust margin as needed */
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #ffcc00; /* Button background color */
+      color: #004080; /* Button text color */
+      font-weight: 600; /* Button text weight */
+      font-size: 18px; /* Button text size */
+      padding: 12px 24px; /* Adjust padding as needed */
+      border-radius: 5px; /* Add rounded corners */
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #004080; /* Button background color on hover */
+      color: #ffffff; /* Button text color on hover */
+    }
+
+    /* Adjust features section styles */
+    .features {
+      background-color: #ffffff; /* White background */
+      padding: 80px 0; /* Adjust padding as needed */
+    }
+
+    .section-title h2 {
+      font-size: 36px; /* Section title size */
+      font-weight: 700; /* Section title weight */
+      margin-bottom: 30px; /* Adjust margin as needed */
+      text-align: center;
+    }
+
+    .section-title p {
+      font-size: 18px; /* Section subtitle size */
+      font-weight: 400; /* Section subtitle weight */
+      text-align: center;
+    }
+
+    .icon-box {
+      background-color: #f0f0f0; /* Light grey box background */
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 5px; /* Add rounded corners */
+      transition: transform 0.3s ease;
+    }
+
+    .icon-box i {
+      font-size: 48px; /* Icon size */
+      margin-bottom: 15px; /* Adjust margin as needed */
+      display: block;
+      text-align: center;
+    }
+
+    .icon-box h4 {
+      font-size: 24px; /* Box title size */
+      font-weight: 700; /* Box title weight */
+      margin-bottom: 15px; /* Adjust margin as needed */
+      text-align: center;
+    }
+
+    .icon-box p {
+      font-size: 16px; /* Box text size */
+      font-weight: 400; /* Box text weight */
+      text-align: center;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-5px); /* Add hover animation */
+    }
+
+    /* Adjust footer styles */
+    footer {
+      background-color: #004080; /* Dark blue footer background */
+      color: #ffffff; /* White text color */
+      padding: 60px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 0; /* Remove bottom margin for paragraphs */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      #hero h1 {
+        font-size: 36px; /* Adjust hero heading size for smaller screens */
+      }
+      #hero h2 {
+        font-size: 18px; /* Adjust hero subheading size for smaller screens */
+      }
+      .download-btn {
+        font-size: 16px; /* Adjust button text size for smaller screens */
+      }
+      .icon-box {
+        padding: 20px; /* Adjust icon box padding for smaller screens */
+      }
+    }
+  </style>
+
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><img src="assets/img/FesCodeLogoColor1.png" width="100" height="100%" alt="FesCode Logo"></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Our Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Testimonials</a></li>
+          <li><a class="getstarted scrollto" href="index.html">Contact</a></li>
+        </ul>
+        <div>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </div>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+    <div class="container">
+        <div class="section-title">
+            <h2>A Step-by-Step Guide to the Data Analysis Mastering</h2>
+            <p>Discover the power of data analysis and its impact on today's digital economy.</p>
+        </div>
+
+        <div class="content">
+            <img src="https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/old-blog-uploads/the-data-analysis-process-1.jpg" alt="Data Analysis" class="course-img">
+            <p>Data analysis is the cornerstone of informed decision-making in businesses today. At FesCode Academy,
+                our data analysis course equips you with the skills to extract actionable insights from data,
+                transforming raw information into strategic opportunities.</p>
+
+            <h3>What You'll Learn</h3>
+            <ul>
+                <li>Master data manipulation and cleaning techniques using tools like Python and SQL.</li>
+                <li>Visualize data effectively to communicate findings and drive decision-making.</li>
+                <li>Apply statistical methods and machine learning algorithms to uncover patterns and trends.</li>
+                <li>Hands-on projects and real-world case studies to build practical experience.</li>
+            </ul>
+            <!-- <video src="https://www.youtube.com/embed/kNl7YDN-_js?si=xnbzRtsg7WNqGbGc"></video> -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kNl7YDN-_js?si=xnbzRtsg7WNqGbGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Whether you're starting your career in data analysis or seeking to enhance your existing skills, our
+                course offers a comprehensive curriculum designed to meet industry demands. Join us and unlock the
+                potential of data!</p>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <!-- <a href="#openModalBtn" class="btn">Start Class Now</a> -->
+                <button id="openModalBtn" class="btn">Enroll Now</button>
+            </div>
+        </div>
+    </div>
+
+    
+      <style>
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0,0,0,0.5);
+        }
+    
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 100%;
+          max-width: 600px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          animation: modal-fade 0.3s ease-out;
+        }
+    
+        .close-button {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: color 0.3s;
+        }
+    
+        .close-button:hover,
+        .close-button:focus {
+          color: rgb(253, 14, 14);
+          text-decoration: none;
+          cursor: pointer;
+        }
+    
+        @keyframes modal-fade {
+          from { opacity: 0; transform: translateY(-50px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+    
+        /* Form Styling */
+        .modal-content form {
+          display: grid;
+          gap: .5rem;
+        }
+    
+        .modal-content form label {
+          font-weight: bold;
+        }
+    
+        .modal-content form input[type="text"],
+        .modal-content form input[type="email"],
+        .modal-content form input[type="tel"] {
+          width: 100%;
+          padding: 8px;
+          font-size: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+    
+        .modal-content form button {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s;
+        }
+    
+        .modal-content form button:hover {
+          background-color: #45a049;
+        }
+    
+        .modal-content form button:active {
+          background-color: #3e8e41;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+        .modal-content {
+            width: 80%;
+            margin: 30% auto;
+        }
+        }
+      </style>
+    
+      <!-- Course Registration Form -->
+      <div id="lead-form" class="modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal()">&times;</span>
+          <h2>Enroll Now</h2>
+          <form id="leadForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    
+      <script>
+        // Modal functionality
+        const modal = document.getElementById('lead-form');
+        const openModalBtn = document.getElementById('openModalBtn');
+    
+        openModalBtn.addEventListener('click', function() {
+          modal.style.display = 'block';
+        });
+    
+        function closeModal() {
+          modal.style.display = 'none';
+        }
+    
+        window.addEventListener('click', function(event) {
+          if (event.target === modal) {
+            closeModal();
+          }
+        });
+    
+        // Form submission
+        function submitForm(event) {
+          event.preventDefault();
+          
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const phone = document.getElementById('phone').value.trim();
+          const course = document.getElementById('course').value.trim();
+    
+          if (name === '' || email === '' || phone === '' || course === '') {
+            alert('Please fill in all fields');
+          } else {
+            // Replace alert with actual form submission code
+            alert('Form submitted successfully!');
+            closeModal();
+          }
+        }
+      </script>
+  
+    <!-- ======= Footer ======= -->
+<div class="footer-container">
+    <footer id="footer">
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>FesCode</h3>
+              <p>
+                FCT Abuja <br>
+                Nigeria <br><br>
+                <strong>Phone:</strong> <a href="tel:+2349066359220">+2349066359220</a><br>
+                <strong>Email 1:</strong> <a href="mailto:info@fescode.com">info@fescode.com</a><br>
+                <strong>Email 2:</strong> <a href="mailto:fescodeacademy@gmail.com">fescodeacademy@gmail.com</a><br>
+              </p>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FesCode Learning Space</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FesCode Development Space</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FesCode Management Space</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Platforms</h4>
+              <p>Follow us on social media for updates:</p>
+              <div class="social-links mt-3">
+                <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="tiktok"><i class="bx bxl-tiktok"></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>FesCode</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://fescode.com" target="_blank">FesCode Development Hub</a>
+        </div>
+      </div>
+    </footer>
+
+
+    
+  </div>
+  <!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

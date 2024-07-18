@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empower your tech skills with FesCode Academy. Join us to learn programming, data science, and software development.">
+  <meta name="keywords" content="FesCode Academy, tech skills, programming, data science, software development, education">
+
+  <title>FesCode Academy</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/FesCodeLogoColor1.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Poppins:300,400,500,600" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Additional CSS -->
+  <style>
+    /* Customize additional styles as needed */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa; /* Light grey background */
+    }
+
+    /* Adjust header styles */
+    #header {
+      background-color: #004080; /* Dark blue background */
+      color: #ffffff; /* White text color */
+    }
+
+    /* Adjust site name styles */
+    #site-name a {
+      color: #ffffff; /* White text color */
+      font-size: 24px; /* Adjust font size as needed */
+      font-weight: 600; /* Adjust font weight as needed */
+      text-decoration: none;
+    }
+
+    /* Adjust main navigation link styles */
+    #navbar ul li a {
+      color: #ffffff; /* White text color */
+      padding: 10px 15px; /* Adjust padding as needed */
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    #navbar ul li a:hover,
+    #navbar ul li a.active {
+      background-color: #ffcc00; /* Yellow background on hover */
+      border-radius: 5px; /* Add rounded corners */
+    }
+
+    /* Adjust hero section styles */
+    #hero {
+      background-image: url('assets/img/hero-background.jpg'); /* Add an attractive background image */
+      background-size: cover;
+      background-position: center;
+      color: #ffffff; /* White text color */
+      text-align: center;
+      padding: 150px 0; /* Adjust padding as needed */
+    }
+
+    #hero h1 {
+      font-size: 48px; /* Hero section heading size */
+      font-weight: 700; /* Hero section heading weight */
+      margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    #hero h2 {
+      font-size: 24px; /* Subheading size */
+      font-weight: 400; /* Subheading weight */
+      margin-bottom: 30px; /* Adjust margin as needed */
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #ffcc00; /* Button background color */
+      color: #004080; /* Button text color */
+      font-weight: 600; /* Button text weight */
+      font-size: 18px; /* Button text size */
+      padding: 12px 24px; /* Adjust padding as needed */
+      border-radius: 5px; /* Add rounded corners */
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #004080; /* Button background color on hover */
+      color: #ffffff; /* Button text color on hover */
+    }
+
+    /* Adjust features section styles */
+    .features {
+      background-color: #ffffff; /* White background */
+      padding: 80px 0; /* Adjust padding as needed */
+    }
+
+    .section-title h2 {
+      font-size: 36px; /* Section title size */
+      font-weight: 700; /* Section title weight */
+      margin-bottom: 30px; /* Adjust margin as needed */
+      text-align: center;
+    }
+
+    .section-title p {
+      font-size: 18px; /* Section subtitle size */
+      font-weight: 400; /* Section subtitle weight */
+      text-align: center;
+    }
+
+    .icon-box {
+      background-color: #f0f0f0; /* Light grey box background */
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 5px; /* Add rounded corners */
+      transition: transform 0.3s ease;
+    }
+
+    .icon-box i {
+      font-size: 48px; /* Icon size */
+      margin-bottom: 15px; /* Adjust margin as needed */
+      display: block;
+      text-align: center;
+    }
+
+    .icon-box h4 {
+      font-size: 24px; /* Box title size */
+      font-weight: 700; /* Box title weight */
+      margin-bottom: 15px; /* Adjust margin as needed */
+      text-align: center;
+    }
+
+    .icon-box p {
+      font-size: 16px; /* Box text size */
+      font-weight: 400; /* Box text weight */
+      text-align: center;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-5px); /* Add hover animation */
+    }
+
+    /* Adjust footer styles */
+    footer {
+      background-color: #004080; /* Dark blue footer background */
+      color: #ffffff; /* White text color */
+      padding: 60px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 0; /* Remove bottom margin for paragraphs */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      #hero h1 {
+        font-size: 36px; /* Adjust hero heading size for smaller screens */
+      }
+      #hero h2 {
+        font-size: 18px; /* Adjust hero subheading size for smaller screens */
+      }
+      .download-btn {
+        font-size: 16px; /* Adjust button text size for smaller screens */
+      }
+      .icon-box {
+        padding: 20px; /* Adjust icon box padding for smaller screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><img src="assets/img/FesCodeLogoColor1.png" width="200" height="800" alt="FesCode Logo"></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#features">Our Space</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Quote</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch order-2 order-lg-1" data-aos="fade-up">
+          <div>
+            <h1>Welcome to FesCode Academy</h1>
+            <h2>Join us in the journey to empower your tech skills. Welcome to the future of learning.</h2>
+            <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="download-btn">JOIN CLASS NOW</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
+          <img src="assets/img/b.png" class="img-fluid" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= App Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Space</h2>
+          <p>As a company, we offer three dynamic sections to meet your needs</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up">
+            <a style="color: #545353;" href="fescode-academy.html">
+              <div class="icon-box">
+              <div class="icon"><i class="bx bx-receipt"></i></div>
+              <h4>FesCode Academy</h4>
+              <p>Platform for tech training courses. Turn your dreams into reality.</p>
+            </div>  
+            </a>
+            
+          </div>
+          <div class="col-md-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+            <a style="color: #545353;" href="fescode-development-hub.html">
+                <div class="icon-box">
+              <div class="icon"><i class="bx bx-cube-alt"></i></div>
+              <h4>FesCode Development Hub</h4>
+              <p>Developing software solutions for individuals and companies.</p>
+            </div>
+            </a>
+            
+          </div>
+          <div class="col-md-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <a style="color: #545353;" href="fescode-management-hub.html">
+                <div class="icon-box">
+              <div class="icon"><i class="bx bx-images"></i></div>
+              <h4>FesCode Management Hub</h4>
+              <p>Managing company data, integrating with Google BigQuery, and more.</p>
+            </div>
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="dld-btn">
+        <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+      </div>
+    </section><!-- End App Features Section -->
+
+  </main><!-- End #main -->
+
+  <style>
+    /* Paste your CSS styles here */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa; /* Light grey background */
+    }
+
+    /* Adjust section styles */
+    #details {
+      background-color: #ffffff; /* White background */
+      padding: 80px 0; /* Adjust padding as needed */
+    }
+
+    #details h3 {
+      color: #004080; /* Dark blue text color for headings */
+      font-size: 28px; /* Heading size */
+      font-weight: 700; /* Heading weight */
+    }
+
+    #details p {
+      font-size: 16px; /* Paragraph text size */
+      line-height: 1.6; /* Adjust line height as needed */
+    }
+
+    #details ul {
+      list-style-type: none; /* Remove default list styles */
+      padding-left: 0; /* Remove default padding */
+    }
+
+    #details ul li {
+      position: relative; /* Position list items */
+      padding-left: 30px; /* Add left padding to list items */
+      margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    #details ul li:before {
+      content: '\2022'; /* Add bullet point */
+      position: absolute;
+      left: 0;
+      color: #004080; /* Dark blue bullet point color */
+    }
+
+    .dld-btn .downld-btn {
+      display: inline-block;
+      background-color: #ffcc00; /* Yellow button background */
+      color: #004080; /* Dark blue button text color */
+      font-weight: 600; /* Button text weight */
+      font-size: 16px; /* Button text size */
+      padding: 10px 20px; /* Adjust padding as needed */
+      text-decoration: none;
+      border-radius: 5px; /* Add rounded corners */
+      transition: background-color 0.3s ease;
+    }
+
+    .dld-btn .downld-btn:hover {
+      background-color: #004080; /* Dark blue button background on hover */
+      color: #ffffff; /* White button text color on hover */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      #details h3 {
+        font-size: 24px; /* Adjust heading size for smaller screens */
+      }
+      #details p {
+        font-size: 14px; /* Adjust paragraph text size for smaller screens */
+      }
+    }
+  </style>
+
+
+  <!-- ======= Details Section ======= -->
+  <section id="details" class="details">
+    <div class="container">
+
+      <div class="row content">
+        <div class="col-md-4" data-aos="fade-right">
+          <img src="assets/img/a.gif" class="img-fluid" alt="">
+          <div class="dld-btn">
+            <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+          </div>
+        </div>
+        <div class="col-md-8 pt-4" data-aos="fade-up">
+          <h3>FesCode Academy</h3>
+          <p class="fst-italic">
+            At FesCode Academy, we empower individuals with practical tech training to excel in today's digital world. We offer hands-on courses in
+          </p>
+          <ul>
+            <li><i class="bi bi-check"></i>Web dev</li>
+            <li><i class="bi bi-check"></i>App dev</li>
+            <li><i class="bi bi-check"></i> UI/UX design</li>
+            <li><i class="bi bi-check"></i>Cyber Security</li>
+            <li><i class="bi bi-check"></i>Digital Marketing</li>
+            <li><i class="bi bi-check"></i>Data Analysis, etc...</li>
+          </ul>
+          <p>
+            With a focus on real-world projects and personalized feedback, our experienced instructors guide students through comprehensive curriculums, fostering creativity and teamwork. Flexible learning options and career support ensure students receive the skills and confidence needed to succeed in the ever-evolving tech industry.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content">
+        <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+          <img src="assets/img/b.png" class="img-fluid" alt="">
+          <div class="dld-btn">
+            <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+          </div>
+        </div>
+        <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+          <h3>FesCode Development Hub</h3>
+          <p class="fst-italic">
+            At FesCode Dev Hub, we offer a range of innovative tech solutions including web and app development, security trackers and checkers, online payment systems, school, store, and hospital management systems, robotics, AI development and integration, company chatbots, and data analysis in fields like bioinformatics, cheminformatics, and medinformatics, alongside digital marketing services. 
+          </p>
+          <p>
+            Our goal is to empower businesses with top-notch solutions, exceeding client expectations through high-quality services that maximize growth opportunities and foster long-term partnerships.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content">
+        <div class="col-md-4" data-aos="fade-right">
+          <img src="assets/img/x.png" class="img-fluid" alt="">
+          <div class="dld-btn">
+            <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+          </div>
+        </div>
+        <div class="col-md-8 pt-5" data-aos="fade-up">
+          <h3>FesCode Management Hub</h3>
+          <p>The FesCode Hub serves as a comprehensive and centralized platform for overseeing the management of software, websites, and databases for large companies, small companies and other businesses. </p>
+          
+          <p>
+            Additionally, we specialize in analyzing complex company data, providing valuable insights for informed decision-making. 
+          </p>
+          <p>
+            Our hub streamlines operations, ensures data security, and optimizes performance across various digital assets. Our priority is to empower businesses to thrive in today's competitive world.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Details Section -->
+
+<!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Our Popular Quotes and Motivations</h2>
+        <p>Be inspired by our collection of motivational quotes from renowned personalities.</p>
+      </div>
+  
+    </div>
+  
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <blockquote class="custom-quote">
+              <p class="quote-text">Do Hard things. Reject complacency and pursue challenges and personal growth.</p>
+              <footer class="cite-footer"><cite>&mdash; Alex Harris & Brett Harris</cite></footer>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="custom-quote">
+              <p class="quote-text">Anything is possible if you really give yourself to it.</p>
+              <footer class="cite-footer"><cite>&mdash; Walter Elias Disney aka Walt Disney</cite></footer>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="custom-quote">
+              <p class="quote-text">The only way to do great work is to love what you do.</p>
+              <footer class="cite-footer"><cite>&mdash; Steve Jobs</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  
+    <div class="dld-btn">
+      <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+    </div>
+
+
+    <style>
+        .swiper-slide{
+            width: 300px !important;
+        }
+        .custom-quote {
+          border-left: 5px solid #4CAF50;
+          padding-left: 5px;
+          margin: 20px 0;
+          font-style: italic;
+          background-color: #f9f9f9;
+          border-radius: 5px;
+          position: relative;
+          width: 100%;
+        }
+      
+        .custom-quote::before {
+          /* content: open-quote; */
+          font-size: 4em;
+          color: #4CAF50;
+          position: absolute;
+          left: 10px;
+          top: -10px;
+        }
+      
+        .custom-quote .quote-text {
+          font-size: 1.2em;
+          color: #333;
+          font-weight: bold;
+        }
+      
+        .custom-quote footer {
+          text-align: right;
+          font-size: .5em;
+          color: #666;
+        }
+      
+        .cite-footer{
+            background: rgb(224, 223, 223) !important;
+            padding: 10px;
+            
+        }
+        
+        .custom-quote footer cite {
+          font-style: normal;
+          font-size: 15px;
+        }
+      
+        
+        
+        .gallery {
+          margin: 50px 0;
+        }
+      
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+      
+  </section><!-- End Gallery Section -->
+  
+<!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Testimonials</h2>
+        <p>Discover what our clients and instructors have to say about our services and their experiences with us.</p>
+      </div>
+  
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/profilepic.jpg" class="testimonial-img" alt="Saul Goodman">
+              <h3>Saul Goodman</h3>
+              <h4>CEO &amp; Founder</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/profilepic.jpg" class="testimonial-img" alt="Sara Wilsson">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/profilepic.jpg" class="testimonial-img" alt="Jena Karlis">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/profilepic.jpg" class="testimonial-img" alt="Victor Godwin">
+              <h3>Victor Godwin</h3>
+              <h4>Web Developer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/profilepic.jpg" class="testimonial-img" alt="John Larson">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    </div>
+    <div class="dld-btn">
+      <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+    </div>
+
+    <style>
+        .testimonial-item {
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          position: relative;
+        }
+      
+        .testimonial-item img {
+          width: 100px;
+          border-radius: 50%;
+          margin-bottom: 15px;
+        }
+      
+        .testimonial-item h3 {
+          font-size: 1.2em;
+          font-weight: 700;
+          margin-bottom: 5px;
+          color: #333;
+        }
+      
+        .testimonial-item h4 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #777;
+          margin-bottom: 15px;
+        }
+      
+        .testimonial-item p {
+          font-style: italic;
+          color: #555;
+          margin-bottom: 0;
+        }
+      
+        .quote-icon-left, .quote-icon-right {
+          color: #4CAF50;
+          font-size: 2em;
+        }
+      
+        .section-title {
+          text-align: center;
+          padding-bottom: 30px;
+        }
+      
+        .section-title h2 {
+          font-size: 2.5em;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+      
+        .section-title p {
+          font-size: 1.2em;
+          color: #555;
+        }
+      </style>
+      
+  </section><!-- End Testimonials Section -->
+  
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+        <h2>Contact <span>|| Register</span></h2>
+        <p>Get in touch with us today, or proceed to register for your course if you're here to learn. Otherwise, click to call us.</p>
+        </div>
+
+        <div class="row">
+
+        <div class="col-lg-6">
+            <div class="row">
+            <div class="col-lg-6 info">
+                <i class="bx bx-map"></i>
+                <h4>Address</h4>
+                <p>FCT Abuja,<br>Online Remote</p>
+            </div>
+            <div class="col-lg-6 info">
+                <i class="bx bx-phone"></i>
+                <h4>Call Us</h4>
+                <p><a href="tel:+2349066359220">+2349066359220</a></p>
+            </div>
+            <div class="col-lg-6 info">
+                <i class="bx bx-envelope"></i>
+                <h4>Email Us</h4>
+                <p><a href="info@fescode.com" target="_blank">info@fescode.com</a><br><a href="fescodeacademy@gmail.com" target="_blank">fescodeacademy@gmail.com</a></p>
+            </div>
+            
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div id="register" class="section-title" style="padding-top: 2rem; display: none;">
+            <h2>Register Here</h2>
+            </div>
+            <form action="" method="post" role="form" class="form" data-aos="fade-up">
+            <div class="form-group">
+                <label for="entry.2092238618" class="form-label"><strong>Full Name <span
+                class="text-danger">*</span></strong></label>
+                <input placeholder="Your Full Name" type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="entry.1556369182" class="form-label"><strong>Email <i>(Ensure you provide a valid email) <span
+                class="text-danger">*</span></strong></i></label>
+                <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="entry.975324720" class="form-label"><strong>Phone Number <i>(WhatsApp preferred) <span
+                class="text-danger">*</span></strong></i></label><br>
+        <i>Ensure you provide a valid WhatsApp number so we can reach you.</i>
+                <input placeholder="Your Phone Number" type="number" class="form-control" name="number" id="number" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="entry.479301265"><strong>Address <span class="text-danger">*</span></strong></label>
+                <input placeholder="Address" type="text" class="form-control" name="address" id="Address" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="entry.171098441"><strong>Sex <span class="text-danger">*</span></strong></label>
+                <select class="form-control" name="gender" id="gender" required>
+                    <option value="">Your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <label for="entry.1753222212"><strong>Tick other course(s) you would enroll to learn after your Python course.
+                <span class="text-danger">*</span></strong></label>
+                <select class="form-control" name="course" id="course" required>
+                    <option value="">Choose Your Course</option>
+                    <option value="">Blockchain Technology</option>
+                    <option value="">Full Stack Python Web Development</option>
+                    <option value="">Full Stack PHP Web Development</option>
+                    <option value="">Python Data Analysis</option>
+                    <option value="">Excel Data Analysis (PowerBi, Canva, SQL)</option>
+                    <option value="">Python Data Analysis (BioInformatics)</option>
+                    <option value="">Python Data Analysis (ChemInformatics)</option>
+                    <option value="">Python Data Analysis (MedInformatics)</option>
+                    <option value="">Frontend Web Development</option>
+                    <option value="">Backend Web Development</option>
+                    <option value="">Graphic Design</option>
+                    <option value="">Achitectural and Civil Design</option>
+                    <option value="">Motion Graphics and 2D Animation</option>
+                    <option value="">Digital Marketing</option>
+                    <option value="">Full Stack JavaScript for Mobile App Development</option>
+                    <option value="">Complete WordPress for Web Development</option>
+                    <option value="">UI/UX Design</option>
+                    <option value="">Cyber Security</option>
+                    <option value="">Social Media Marketing</option>
+                    <option value="">Video Editing</option>
+                    <option value="">Content Creation</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <label><strong>How did you hear about FesCode? <span class="text-danger">*</span></strong></label>
+                <select class="form-control" name="hear-about" id="hear-about" required>
+                    <option value="">How did you hear about FesCode?</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="friend">Through a Friend</option>
+                </select>
+            </div>
+            <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Submit</button></div>
+        </form>
+        
+
+
+            <!-- <form action="" method="post" role="form" class="form" data-aos="fade-up">
+            <div class="form-group">
+                <input placeholder="Your Full Name" type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group mt-3">
+                <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="form-group mt-3">
+                <input placeholder="Your Phone Number (WhatsApp preferred)" type="number" class="form-control" name="number" id="number" required>
+            </div>
+            <div class="form-group mt-3">
+                <input placeholder="Address" type="text" class="form-control" name="address" id="Address" required>
+            </div>
+            <div class="form-group mt-3">
+                <select class="form-control" name="" id="">
+                <option value="">Your Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <select class="form-control" name="" id="">
+                <option value="">Choose Your Course</option>
+                <option value="">Blockchain Technology</option>
+                <option value="">Full Stack Python Web Development</option>
+                <option value="">Full Stack PHP Web Development</option>
+                <option value="">Python Data Analysis</option>
+                <option value="">Excel Data Analysis (PowerBi, Canva, SQL)</option>
+                <option value="">Python Data Analysis (BioInformatics)</option>
+                <option value="">Python Data Analysis (ChemInformatics)</option>
+                <option value="">Python Data Analysis (MedInformatics)</option>
+                <option value="">Frontend Web Development</option>
+                <option value="">Backend Web Development</option>
+                <option value="">Graphic Design</option>
+                <option value="">Achitectural and Civil Design</option>
+                <option value="">Motion Graphics and 2D Animation</option>
+                <option value="">Digital Marketing</option>
+                <option value="">Full Stack JavaScript for Mobile App Development</option>
+                <option value="">Complete WordPress for Web Development</option>
+                <option value="">UI/UX Design</option>
+                <option value="">Cyber Security</option>
+                <option value="">Social Media Marketing</option>
+                <option value="">Video Editing</option>
+                <option value="">Content Creation</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <select class="form-control" name="" id="">
+                <option value="">How did you hear about FesCode?</option>
+                <option value="">Facebook</option>
+                <option value="">WhatsApp</option>
+                <option value="">Instagram</option>
+                <option value="">Through a Friend</option>
+                </select>
+            </div>
+            <!-- <div class="form-group mt-3">
+                <textarea placeholder="Message" class="form-control" name="message" rows="5" required></textarea>
+            </div> -->
+            <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Submit</button></div>
+            </form> -->
+        </div>
+
+        </div>
+
+    </div>
+    <div class="dld-btn">
+        <a href="https://chat.whatsapp.com/LlpaG6YWHXf8wsJkxQN2qa" class="downld-btn">JOIN CLASS NOW</a>
+    </div>
+
+
+    <style>
+        .contact .info {
+          margin-bottom: 20px;
+          padding: 20px;
+          background: #fff;
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      
+        .contact .info i {
+          font-size: 2em;
+          color: #4CAF50;
+          margin-right: 10px;
+        }
+      
+        .contact .info h4 {
+          font-size: 1.2em;
+          font-weight: 700;
+          margin-bottom: 5px;
+          color: #333;
+        }
+      
+        .contact .info p {
+          margin-bottom: 0;
+          color: #555;
+        }
+      
+        .contact .form-group {
+          margin-bottom: 20px;
+        }
+      
+        .contact .form-control {
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid #ccc;
+        }
+      
+        .contact .form-label {
+          font-weight: 600;
+          color: #333;
+        }
+      
+        .contact .text-danger {
+          color: #dc3545;
+        }
+      
+        .contact .text-center button {
+          background-color: #4CAF50;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        .contact .text-center button:hover {
+          background-color: #45a049;
+        }
+      
+        .section-title {
+          text-align: center;
+          padding-bottom: 30px;
+        }
+      
+        .section-title h2 {
+          font-size: 2.5em;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+      
+        .section-title p {
+          font-size: 1.2em;
+          color: #555;
+        }
+      </style>
+      
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Footer ======= -->
+<div class="footer-container">
+    <footer id="footer">
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>FesCode</h3>
+              <p>
+                FCT Abuja <br>
+                Nigeria <br><br>
+                <strong>Phone:</strong> <a href="tel:+2349066359220">+2349066359220</a><br>
+                <strong>Email 1:</strong> <a href="mailto:info@fescode.com">info@fescode.com</a><br>
+                <strong>Email 2:</strong> <a href="mailto:fescodeacademy@gmail.com">fescodeacademy@gmail.com</a><br>
+              </p>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FesCode Learning Space</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FesCode Development Space</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FesCode Management Space</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Platforms</h4>
+              <p>Follow us on social media for updates:</p>
+              <div class="social-links mt-3">
+                <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="tiktok"><i class="bx bxl-tiktok"></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>FesCode</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://fescode.com" target="_blank">FesCode Development Hub</a>
+        </div>
+      </div>
+    </footer>
+
+
+    
+  </div>
+  <!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
